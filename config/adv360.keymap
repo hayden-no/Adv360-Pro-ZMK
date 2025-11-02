@@ -37,7 +37,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MEDIA_CONTROL";
             #binding-cells = <0>;
-            bindings = <&kp C_PLAY_PAUSE>, <&kt C_NEXT>, <&kt C_PREVIOUS>;
+            bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREVIOUS>;
         };
 
         key_or_mode: key_or_mode {
@@ -67,6 +67,10 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_tap>,
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER &macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
 
             label = "FAST_CLICKER";
@@ -154,7 +158,7 @@
 &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans          &trans           &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &kt A            &kt D           &trans  &trans  &trans      &trans  &trans  &trans          &kt W   &kt S   &trans  &trans  &trans
+&trans  &trans          &trans          &kp A            &kp D           &trans  &trans  &trans      &trans  &trans  &trans          &kp W   &kp S   &trans  &trans  &trans
             >;
         };
 
@@ -164,7 +168,7 @@
 &trans  &trans  &kt W   &trans          &trans           &trans  &trans                                      &trans  &trans  &trans        &trans          &trans  &trans  &trans
 &trans  &kt A   &kp S   &kt D           &trans           &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans        &trans          &trans  &trans  &trans
 &trans  &trans  &trans  &trans          &trans           &trans                  &trans      &trans                  &trans  &trans        &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &kt LEFT_ARROW  &kt RIGHT_ARROW          &trans  &trans  &trans      &trans  &trans  &trans          &kt UP_ARROW  &kt DOWN_ARROW  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LEFT_ARROW  &kp RIGHT_ARROW          &trans  &trans  &trans      &trans  &trans  &trans          &kp UP_ARROW  &kp DOWN_ARROW  &trans  &trans  &trans
             >;
         };
 
